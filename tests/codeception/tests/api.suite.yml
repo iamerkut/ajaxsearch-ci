@@ -1,0 +1,10 @@
+# tests/codeception/tests/api.suite.yml
+actor: ApiTester
+modules:
+  enabled:
+    - \Codeception\Module\PhpBrowser
+    - \Codeception\Module\Asserts
+    - \Codeception\Module\REST
+  config:
+    REST:
+      depends: PhpBrowser

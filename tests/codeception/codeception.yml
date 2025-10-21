@@ -1,0 +1,14 @@
+paths:
+  tests: tests
+  output: _output
+  data: _data
+  support: _support
+actor_suffix: Tester
+settings:
+  colors: true
+params:
+  - .env
+modules:
+  config:
+    PhpBrowser:
+      url: "%BASE_URL%"

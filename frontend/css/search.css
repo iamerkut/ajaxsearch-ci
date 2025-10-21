@@ -1,0 +1,18 @@
+/* plugins/AjaxSearch/frontend/css/search.css */
+.cc-ajax-search { position: relative; max-width: 520px; }
+.cc-ajax-search__input { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 6px; outline: none; }
+.cc-ajax-search__input:focus { border-color: #aaa; }
+.cc-ajax-search__dropdown {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+  background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  max-height: 420px; overflow: auto; z-index: 9999; padding: 6px; display: block;
+}
+.cc-ajax-search__dropdown[aria-hidden="true"] { display: none; }
+.cc-ajax-search__item { display: flex; gap: 10px; padding: 8px; border-radius: 6px; text-decoration: none; }
+.cc-ajax-search__item:hover, .cc-ajax-search__item.is-active { background: #f3f4f6; }
+.cc-ajax-search__thumb { width: 44px; height: 44px; object-fit: contain; background: #fff; border: 1px solid #eee; border-radius: 6px; }
+.cc-ajax-search__thumb--ph { display: inline-block; }
+.cc-ajax-search__meta { display: flex; flex-direction: column; min-width: 0; }
+.cc-ajax-search__name { font-size: 14px; color: #111827; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cc-ajax-search__sku-price { font-size: 12px; color: #6b7280; display: flex; gap: 10px; }
+.cc-ajax-search__empty, .cc-ajax-search__error { padding: 10px; color: #6b7280; }

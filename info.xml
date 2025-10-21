@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jtlshopplugin>
+  <Name>AjaxSearch</Name>
+  <Description>Dinamik AJAX arama çubuğu — canlı öneriler (JTL-Shop 5.6)</Description>
+  <Author>Your Company</Author>
+  <URL>https://example.com</URL>
+  <XMLVersion>1.0</XMLVersion>
+  <ShopVersion>5.6.0</ShopVersion>
+  <PluginVersion>1.0.0</PluginVersion>
+  <MinShopVersion>5.6.0</MinShopVersion>
+  <MaxShopVersion>5.6.x</MaxShopVersion>
+  <CreateDate>2025-10-21</CreateDate>
+
+  <Install>
+    <Assocfiles></Assocfiles>
+  </Install>
+  <Uninstall></Uninstall>
+
+  <Settings>
+    <Setting>
+      <Name>enabled</Name>
+      <Value>Y</Value>
+      <Type>selectbox</Type>
+      <SelectboxOptions>
+        <Option><Name>Y</Name><Value>Y</Value></Option>
+        <Option><Name>N</Name><Value>N</Value></Option>
+      </SelectboxOptions>
+      <Description>Öneri servisini etkinleştir</Description>
+    </Setting>
+    <Setting>
+      <Name>min_length</Name>
+      <Value>2</Value>
+      <Type>number</Type>
+      <Description>Arama için minimum karakter</Description>
+    </Setting>
+    <Setting>
+      <Name>limit</Name>
+      <Value>8</Value>
+      <Type>number</Type>
+      <Description>Öneri adedi</Description>
+    </Setting>
+  </Settings>
+
+  <Localization>
+    <Locale>tr_TR</Locale>
+  </Localization>
+</jtlshopplugin>
